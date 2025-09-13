@@ -35,6 +35,14 @@
         .review-card:hover {
             transform: translateY(-5px);
         }
+        .team-image {
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease;
+        }
+        .team-image:hover {
+            transform: scale(1.03);
+        }
     </style>
 </head>
 <body class="bg-white font-sans">
@@ -128,6 +136,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Owner & Team Images Section -->
+            <div class="mt-20 grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://placehold.co/300x350/007BFF/FFFFFF?text=Owner+Installing+AC" alt="Owner Installing AC" class="team-image mx-auto mb-4">
+                    <h4 class="font-bold text-gray-800">John Mthembu</h4>
+                    <p class="text-gray-600">Founder & Lead Technician</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://placehold.co/300x350/FF0000/FFFFFF?text=Team+Servicing+Unit" alt="Team Servicing Unit" class="team-image mx-auto mb-4">
+                    <h4 class="font-bold text-gray-800">Lerato Ndlovu</h4>
+                    <p class="text-gray-600">Senior Service Technician</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://placehold.co/300x350/0044CC/FFFFFF?text=Team+Installing+Commercial" alt="Team Installing Commercial" class="team-image mx-auto mb-4">
+                    <h4 class="font-bold text-gray-800">Thabo Sibanda</h4>
+                    <p class="text-gray-600">Commercial Installation Specialist</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -137,7 +164,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Services</h2>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                    From residential units to large commercial installations, we provide comprehensive solutions for all your air conditioning and refrigeration needs.
+                    At AC Air Conditioning we supply, service, repair, install, and maintain all types of Air Conditioning and Refrigeration components (from Domestic to Commercial).
                 </p>
             </div>
 
@@ -146,7 +173,7 @@
                     <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-2xl mb-6">
                         📦
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Supply of Components</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Supply</h3>
                     <p class="text-gray-600 leading-relaxed">We supply high-quality air conditioning and refrigeration components for all needs, from residential to commercial applications.</p>
                 </div>
                 
@@ -162,16 +189,16 @@
                     <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-2xl mb-6">
                         🛠️
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Repairs & Maintenance</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive repair and maintenance services to keep your systems running efficiently year-round.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Repair</h3>
+                    <p class="text-gray-600 leading-relaxed">Comprehensive repair services for all types of AC and refrigeration systems.</p>
                 </div>
                 
                 <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 service-icon">
                     <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-2xl mb-6">
                         ❄️
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Servicing</h3>
-                    <p class="text-gray-600 leading-relaxed">Regular servicing of all types of AC and refrigeration systems to maximize performance and lifespan.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Service & Maintenance</h3>
+                    <p class="text-gray-600 leading-relaxed">Regular servicing to maximize performance and extend the lifespan of your systems.</p>
                 </div>
             </div>
         </div>
@@ -188,18 +215,42 @@
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <?php for($i = 1; $i <= 12; $i++): ?>
                 <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
-                    <img src="https://placehold.co/400x400/007BFF/FFFFFF?text=Project+<?= $i ?>" alt="Project <?= $i ?>" class="w-full h-full object-cover">
+                    <img src="https://placehold.co/400x400/007BFF/FFFFFF?text=Residential+Installation" alt="Residential Installation" class="w-full h-full object-cover">
                 </div>
-                <?php endfor; ?>
-            </div>
-
-            <div class="text-center mt-12">
-                <p class="text-gray-600 text-lg">Showing 12 of 198+ projects</p>
-                <button class="mt-4 bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors duration-300 hover-blue">
-                    View All Projects
-                </button>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/FF0000/FFFFFF?text=Commercial+Unit" alt="Commercial Unit" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/0044CC/FFFFFF?text=Refrigeration+Repair" alt="Refrigeration Repair" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/CC0000/FFFFFF?text=Service+Technician" alt="Service Technician" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/0066CC/FFFFFF?text=Wall+Mounted+AC" alt="Wall Mounted AC" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/FF6600/FFFFFF?text=Industrial+System" alt="Industrial System" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/003399/FFFFFF?text=Maintenance+Check" alt="Maintenance Check" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/FF3300/FFFFFF?text=Customer+Satisfaction" alt="Customer Satisfaction" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/0055AA/FFFFFF?text=New+Installation" alt="New Installation" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/CC0066/FFFFFF?text=Refrigerant+Service" alt="Refrigerant Service" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/0088CC/FFFFFF?text=HVAC+System" alt="HVAC System" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden hover:opacity-90 transition-opacity duration-300 cursor-pointer">
+                    <img src="https://placehold.co/400x400/FF0066/FFFFFF?text=Expert+Work" alt="Expert Work" class="w-full h-full object-cover">
+                </div>
             </div>
         </div>
     </section>
